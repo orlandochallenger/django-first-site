@@ -1,0 +1,12 @@
+{% extends "base.html"%}
+{% block title %}Detail{% endblock %}
+% block content %}
+
+    <h1>{{ question.question_text}}</h1>
+    {% if error_message %}<p>error_message</p>{% endif%}
+
+    <form>
+        {%csrf_token %}
+    </form>
+{% endblock %}
+
